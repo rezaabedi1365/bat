@@ -1,0 +1,21 @@
+@ECHO OFF
+
+rd /q /s \\file\ESETMirrorUpdate\ESETMirrorUpdate
+
+mkdir  \\file\ESETMirrorUpdate\ESETMirrorUpdate
+
+robocopy /z "C:\ESETMirrorUpdate" "\\file\ESETMirrorUpdate\ESETMirrorUpdate" /E
+if %ERRORLEVEL%. equ 1. (
+
+	echo Copy File in %DATE% Was Successful. >> c:\Esetcopylog.txt
+
+	exit /B 
+
+)
+
+else (
+
+	echo Copy File in %DATE% Was Fail. >> c:\Esetcopylog.txt
+
+)
+
