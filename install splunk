@@ -4,3 +4,5 @@ msiexec.exe /i %temp%\spf.msi AGREETOLICENSE=Yes DEPLOYMENT_SERVER="splunk-ds.fa
 
 stop SplunkForwarder
 net start SplunkForwarder
+
+del /f "%temp%\spf.msi"
