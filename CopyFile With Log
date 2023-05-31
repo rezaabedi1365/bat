@@ -7,7 +7,7 @@ mkdir  \\file\ESETMirrorUpdate\ESETMirrorUpdate
 robocopy /z "C:\ESETMirrorUpdate" "\\file\ESETMirrorUpdate\ESETMirrorUpdate" /E
 if %ERRORLEVEL%. equ 1. (
 
-	echo Copy File in %DATE% Was Successful. >> c:\Esetcopylog.txt
+	echo Copy File in %DATE% %TIME% Was Successful. >> c:\Esetcopylog.txt
 
 	exit /B 
 
@@ -15,7 +15,7 @@ if %ERRORLEVEL%. equ 1. (
 
 else (
 
-	echo Copy File in %DATE% Was Fail. >> c:\Esetcopylog.txt
+	echo Copy File in %DATE% %TIME% Was Fail. >> c:\Esetcopylog.txt
 
 )
 
