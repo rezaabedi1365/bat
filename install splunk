@@ -7,4 +7,4 @@ stop SplunkForwarder
 net start SplunkForwarder
 
 del /f "%temp%\spf.msi"
-#del /f d:\spf.msi"
+#del /f "d:\spf.msi"
