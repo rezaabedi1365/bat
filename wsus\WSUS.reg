@@ -1,0 +1,26 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"WUServer"="http://WSUS"
+"WUStatusServer"="http://WSUS"
+"TargetGroupEnabled"=dword:00000001
+"TargetGroup"="WSUS GROUP 1"
+"ElevateNonAdmins"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoUpdate"=dword:00000000
+"AUOptions"=dword:00000004
+"ScheduledInstallDay"=dword:00000000
+"ScheduledInstallTime"=dword:0000000a
+"NoAutoRebootWithLoggedOnUsers"=dword:00000001
+"AutoInstallMinorUpdates"=dword:00000001
+"RebootRelaunchTimeoutEnabled"=dword:00000001
+"RebootRelaunchTimeout"=dword:0000003c
+"RescheduleWaitTimeEnabled"=dword:00000001
+"RescheduleWaitTime"=dword:0000000f
+"DetectionFrequencyEnabled"=dword:00000001
+"RebootWarningTimeoutEnabled"=dword:00000001
+"RebootWarningTimeout"=dword:0000001e
+"UseWUServer"=dword:00000001
+"NoAUShutdownOption"=dword:00000000
+"NoAUAsDefaultShutdownOption"=dword:00000000
