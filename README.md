@@ -1,9 +1,9 @@
 
 # Sample for Readme 
 ## Table of Contents
-   * [Requirements](###requirements)
+   * [Requirements](###Requirements)
 
-#### Project setup
+#### Requirements
 ```
 npm install
 ```
