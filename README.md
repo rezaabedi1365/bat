@@ -2,30 +2,30 @@
 # Windows Commands
 - [Microsoft](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
 
-## File and Folder Management
+### File and Folder Management
    * [rd](###rd)
    * [find](###find)
 
 
-## User and Group Management
+### User and Group Management
 
 
 
-## Network Management
+### Network Management
 
 
 
-## Disk Management
+### Disk Management
 
 
 
 --------------------------------------------------
-#### rd
+##### rd
 ```
 rd [<drive>:]<path> [/s [/q]]
 ```
 
-### find
+#### find
 ```
 find [/v] [/c] [/n] [/i] [/off[line]] <"string"> [[<drive>:][<path>]<filename>[...]]
 ```
