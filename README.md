@@ -3,9 +3,9 @@
 - [Microsoft](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
 
 ## Table of Contents
-   * [Requirements](###Requirements)
+   * [rd](###rd)
 
-#### Requirements
+#### rd
 ```
-npm install
+rd [<drive>:]<path> [/s [/q]]
 ```
