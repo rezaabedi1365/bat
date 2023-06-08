@@ -1,0 +1,4 @@
+
+#To schedule the MyApp program to run at midnight on January 1, 2003, type:
+schtasks /create /tn MyApp /tr c:\apps\myapp.exe /sc once /sd 01/01/2003 /st 00:00
+
