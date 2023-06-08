@@ -1,0 +1,16 @@
+
+#To run the MyApp program on the local computer, type:
+schtasks /create /tn MyApp /tr myapp.exe /sc weekly /d TUE /ru Admin06
+
+#To run the MyApp program on the Marketing computer every four days, type:
+schtasks /create /tn MyApp /tr myapp.exe /sc daily /mo 4 /s Marketing /u Marketing\Admin01 /ru Reskits\User01
+
+#To run schedule the AdminCheck.exe program to run on the Public computer every Friday at 4:00 A.M.,, but only if the administrator of the computer is logged on, type:
+schtasks /create /tn "Check Admin" /tr AdminCheck.exe /sc weekly /d FRI /st 04:00 /s Public /u Domain3\Admin06 /ru Public\Admin01 /it
+
+#To schedule the MyApp program to run on the local computer with permissions of the System account, type:
+schtasks /create /tn MyApp /tr c:\apps\myapp.exe /sc monthly /d 15 /ru System
+
+#To schedule the MyApp program to run on the Finance01 computer every morning at 4:00 A.M., using system permissions, type:
+schtasks /create /tn MyApp /tr myapp.exe /sc daily /st 04:00 /s Finance01 /u Admin01 /ru System
+
