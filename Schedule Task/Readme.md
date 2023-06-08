@@ -12,8 +12,8 @@ at [\computername] <time> [/interactive] [/every:date[,...] | /next:date[,...]] 
  * [Syntax]()
 
 
-#### schtasks /change
-#### schtasks /create
+* #### schtasks /change
+* #### schtasks /create
 #### schtasks /delete
 #### schtasks /end
 #### schtasks /query
