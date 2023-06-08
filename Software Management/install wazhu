@@ -1,0 +1,7 @@
+curl -o %temp%\xw44.msi http://192.168.1.10:3333/xw44.msi
+#curl -o d:\xw44.msi http://192.168.1.10:3333/xw44.msi
+cd "%temp%" && .\xw44.msi /q
+net stop WazuhSvcnet
+net start WazuhSvc
+del /f "%temp%\xw44.msi"
+#del /f "d:xw44.msi"
