@@ -22,6 +22,10 @@ schtasks /create /sc weekly /d FRI /tn "auto reboot computer weekly" /st 23:00 /
          #WED
          #THU
          #FRI
- #/tn <taskname>     
+ #/tn <taskname>   ""
+ 
+ #/st <Starttime>
+ 
+ #/tr <Taskrun>    ""
          
       
