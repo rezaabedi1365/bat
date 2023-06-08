@@ -6,10 +6,7 @@
    * [rd](###rd)
    * [find](###find)
 
-#### rd
-```
-rd [<drive>:]<path> [/s [/q]]
-```
+
 ## User and Group Management
 
 
@@ -23,6 +20,10 @@ rd [<drive>:]<path> [/s [/q]]
 
 
 
+#### rd
+```
+rd [<drive>:]<path> [/s [/q]]
+```
 
 ### find
 ```
