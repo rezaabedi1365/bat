@@ -1,0 +1,3 @@
+
+#To schedule the MyApp program to run whenever the computer is idle, type:
+schtasks /create /sc onidle /i 10 /tn MyApp /tr c:\apps\myapp.exe 
