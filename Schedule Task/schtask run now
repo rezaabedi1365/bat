@@ -1,0 +1,3 @@
+
+#To schedule a task to run once, on November 13, 2020 at 2:18 P.M. local time, type:
+schtasks /create /sc once /st 14:18 /sd 11/13/2002 /tn MyApp /tr c:\apps\myapp.exe 
