@@ -1,0 +1,9 @@
+
+#To schedule the MyApp program to run once a day, every day, at 8:00 A.M. until December 31, 2021, type:
+schtasks /create /tn MyApp /tr c:\apps\myapp.exe /sc daily /st 08:00 /ed 31/12/2021
+
+#To schedule the MyApp program to run every twelve days at 1:00 P.M. (13:00) beginning on December 31, 2021, type:
+schtasks /create /tn MyApp /tr c:\apps\myapp.exe /sc daily /mo 12 /sd 12/31/2002 /st 13:00
+
+#To schedule a security script, Sec.vbs, to run every 70 days, type:
+schtasks /create /tn "Security Script" /tr sec.vbs /sc daily /mo 70 /it
