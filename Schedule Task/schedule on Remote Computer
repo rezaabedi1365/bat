@@ -1,3 +1,15 @@
 
 #To schedule a task that runs when a user logs on to a remote computer, type:
 schtasks /create /sc onlogon /s Server23 /tn "Start Web Site" /tr c:\myiis\webstart.bat 
+
+#To schedule the MyApp program (as an administrator) to run on the SRV01 remote computer every ten days starting immediately,type:
+schtasks /create /s SRV01 /tn MyApp /tr c:\program files\corpapps\myapp.exe /sc daily /mo 10
+
+#To schedule the MyApp program (as a user) to run on the SRV06 remote computer every three hours, type:
+schtasks /create /s SRV06 /tn MyApp /tr c:\program files\corpapps\myapp.exe /sc hourly /mo 3 /u reskits\admin01 /p R43253@4$ /ru SRV06\user03 /rp MyFav!!Pswd
+
+#To schedule the MyApp program (as a user) to run on the SRV02 remote computer on the last day of every month.
+schtasks /create /s SRV02 /tn MyApp /tr c:\program files\corpapps\myapp.exe /sc monthly /mo LASTDAY /m * /u reskits\admin01
+
+
+
