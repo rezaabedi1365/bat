@@ -4,7 +4,7 @@
 
 ## File and Folder Management
    * [rd](###rd)
-   * [find] (###find)
+   * [find](###find)
 
 #### rd
 ```
