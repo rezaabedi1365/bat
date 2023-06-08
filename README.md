@@ -5,6 +5,12 @@
 ### File and Folder Management
    * [rd](####rd)
    * [find](####find)
+   * [XCOPY](####XCOPY) 
+   * [robocopy](####robocopy) 
+   * [rd&rmdir](####rd&rmdir)
+   * [forfiles](####forfiles)
+   * [del](####del) 
+   
 
 
 ### User and Group Management
