@@ -1,0 +1,7 @@
+curl -o %temp%\spf.msi http://192.168.1.10:3333/spf.msi
+#curl -o d:\spf.msi http://localhost/spf.msi
+msiexec.exe /i %temp%\spf.msi AGREETOLICENSE=Yes DEPLOYMENT_SERVER="splunk-ds.faradis.net:8089" SPLUNKUSERNAME=uf-admin GENRANDOMPASSWORD=1 /quiet
+stop SplunkForwarder
+net start SplunkForwarder
+del /f "%temp%\spf.msi"
+#del /f "d:\spf.msi"
