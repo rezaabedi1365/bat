@@ -1,0 +1,3 @@
+
+#To schedule a task that runs when a user logs on to a remote computer, type:
+schtasks /create /sc onlogon /s Server23 /tn "Start Web Site" /tr c:\myiis\webstart.bat 
