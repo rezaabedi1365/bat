@@ -3,6 +3,14 @@
 #To schedule the MyApp program to run every five hours, beginning on the first day of March 2002, type:
 schtasks /create /sc hourly /mo 5 /sd 03/01/2002 /tn My App /tr c:\apps\myapp.exe
 
+#To schedule the MyApp program to run hourly, beginning at five minutes past midnight, type:
+schtasks /create /sc hourly /st 00:05 /tn MyApp /tr c:\apps\myapp.exe
+
+#To schedule the MyApp program to run every 3 hours, for 10 hours total, type:
+schtasks /create /sc hourly /mo 3 /st 00:00 /du 0010:00 /tn MyApp /tr myapp.exe 
+
+
+
 # /sc is Specifies the schedule type.
       #MINUTE
       #HOURLY
