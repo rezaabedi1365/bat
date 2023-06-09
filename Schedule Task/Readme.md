@@ -52,9 +52,7 @@ schtasks /run /tn <taskname> [/s <computer> [/u [<domain>\]<user> [/p <password>
       - #ONLOGON
       - #ONIDLE
 ### /d  <is  DAYs >
-      value between 1-52 weeks 
-    OR
-      Specefic Days
+       Specefic Days
          - SAT
          - SUN
          - MON
