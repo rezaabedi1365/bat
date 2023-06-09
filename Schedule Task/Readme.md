@@ -40,16 +40,16 @@ schtasks /run /tn <taskname> [/s <computer> [/u [<domain>\]<user> [/p <password>
 ###### [Microsoft Schetask/Create Link](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks-create)
 
 
-#/sc is Specifies the schedule type.
-      #MINUTE  in visual is ontime with minut repeat
-      #HOURLY  in visual is ontime with hourly repeat
-      #DAILY
-      #WEEKLY
-      #MONTHLY
-      #ONCE
-      #ONSTART
-      #ONLOGON
-      #ONIDLE
+# /sc is Specifies the schedule type.
+      - #MINUTE  in visual is ontime with minut repeat
+      - #HOURLY  in visual is ontime with hourly repeat
+      - #DAILY
+      - #WEEKLY
+      - #MONTHLY
+      - #ONCE
+      - #ONSTART
+      - #ONLOGON
+      - #ONIDLE
 #/d  is  DAYs.
       #value between 1-52 weeks 
     #OR
