@@ -36,8 +36,8 @@ schtasks /end /tn <taskname> [/s <computer> [/u [<domain>\]<user> [/p <password>
 schtasks /run /tn <taskname> [/s <computer> [/u [<domain>\]<user> [/p <password>]]]
 ```
 
-- [Microsoft Schedule Task](https://learn.microsoft.com/en-us/windows/win32/taskschd/schtasks)
-- [Microsoft Schetask/Create](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks-create)
+[Microsoft Schedule Task](https://learn.microsoft.com/en-us/windows/win32/taskschd/schtasks)
+[Microsoft Schetask/Create](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks-create)
 
 
 #/sc is Specifies the schedule type.
