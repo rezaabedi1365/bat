@@ -1,13 +1,13 @@
 
 #To schedule the MyApp program to run on the first day of every month, type:
-schtasks /create /tn MyApp /tr c:\apps\myapp.exe /sc monthly
+schtasks /create /sc monthly /tn MyTask /tr c:\apps\myapp.exe 
 
 #To schedule the MyApp program to run on May 15 and June 15 at 3:00 P.M. (15:00), type:
-schtasks /create /tn MyApp /tr c:\apps\myapp.exe /sc monthly /d 15 /m MAY,JUN /st 15:00
+schtasks /create /sc monthly /d 15 /m MAY,JUN /st 15:00 /tn MyTask /tr c:\apps\myapp.exe 
 
 #To schedule the MyApp program to run on the last day of every month, type:
-schtasks /create /tn MyApp /tr c:\apps\myapp.exe /sc monthly /mo lastday /m *
+schtasks /create /sc monthly /mo lastday /m * /tn MyTask /tr c:\apps\myapp.exe 
 
 #To schedule the MyApp program to run on the last day of February and the last day of March at 6:00 P.M., type:
-schtasks /create /tn MyApp /tr c:\apps\myapp.exe /sc monthly /mo lastday /m FEB,MAR /st 18:00
+schtasks /create /sc monthly /mo lastday /m FEB,MAR /st 18:00 /tn MyTask /tr c:\apps\myapp.exe 
 
