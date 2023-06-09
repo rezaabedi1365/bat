@@ -41,16 +41,17 @@ schtasks /run /tn <taskname> [/s <computer> [/u [<domain>\]<user> [/p <password>
 
 
 # Parametrs
-### /sc (Specifies the schedule type) 
-      - #MINUTE  in visual is ontime with minut repeat
-      - #HOURLY  in visual is ontime with hourly repeat
-      - #DAILY
-      - #WEEKLY
-      - #MONTHLY
-      - #ONCE
-      - #ONSTART
-      - #ONLOGON
-      - #ONIDLE
+### /sc 
+   #### (Specifies the schedule type) 
+          - #MINUTE  in visual is ontime with minut repeat
+          - #HOURLY  in visual is ontime with hourly repeat
+          - #DAILY
+          - #WEEKLY
+          - #MONTHLY
+          - #ONCE
+          - #ONSTART
+          - #ONLOGON
+          - #ONIDLE
 ### /d  <is  DAYs >
        Specefic Days
          - SAT
