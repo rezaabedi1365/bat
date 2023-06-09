@@ -3,4 +3,4 @@
 schtasks /create /sc minute /mo 20 /tn "Security Script" /tr \\central\data\scripts\sec.vbs
 
 #To schedule a security script, Sec.vbs, to run on the local computer every 100 minutes between 5:00 P.M. and 7:59 A.M. each day, type:
-schtasks /create /sc minute /mo 100 /st 17:00 /et 08:00 /tn "Security Script" /tr sec.vbs  /k
+schtasks /create /sc minute /mo 100 /st 17:00 /et 19:00 /tn "Security Script" /tr sec.vbs  /k
