@@ -61,7 +61,7 @@ schtasks /run /tn <taskname> [/s <computer> [/u [<domain>\]<user> [/p <password>
          - #WED
          - THU
          - FRI
-### /tn ##### (taskname)   ""
+### /tn  (taskname)   If have space betwen you must use ""
  #/tr <Taskrun>    ""
  ---------------------------------------------------------------------------
  #/st <Starttime>
