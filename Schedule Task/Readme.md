@@ -58,13 +58,13 @@ schtasks /run /tn <taskname> [/s <computer> [/u [<domain>\]<user> [/p <password>
          - SUN
          - MON
          - TUE
-         - #WED
+         - WED
          - THU
          - FRI
 ### /tn  
-	#####(taskname)   If have space betwen task name you must use ""
+#####(taskname)   If have space betwen task name you must use ""
 ### /tr 
-	#####(Taskrun)    you must use "" , But if use path for executable program or scritp you cant dont use it 
+#####(Taskrun)    you must use "" , But if use path for executable program or scritp you cant dont use it 
  ---------------------------------------------------------------------------
  #/st <Starttime>
 	#if you write /sd and dont write start time by default is current time ,
