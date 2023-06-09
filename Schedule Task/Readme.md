@@ -67,13 +67,13 @@ schtasks /run /tn <taskname> [/s <computer> [/u [<domain>\]<user> [/p <password>
 ###### (Taskrun)    you must use "" , But if use path for executable program or scritp you cant dont use it 
  ---------------------------------------------------------------------------
  #### /st <Starttime>
-###### if you write /sd and dont write start time by default is current time ,
+###### (Starttime)	if you write /sd and dont write start time by default is current time ,
  #### /sd <StartDate>
-###### if you write /st and dont write start date by default is current date ,
+###### (StartDate)	if you write /st and dont write start date by default is current date ,
  #### /et <EndTime>
-###### if you write /ed and dont write edn time for expire date by default is 12:00 AM ,
- #### /ed <EndDate>
-###### if you write /et and dont write End date by default is current date ,
+###### (EndTime)	if you write /ed and dont write edn time for expire date by default is 12:00 AM ,
+ #### /ed 
+###### (EndDate)	if you write /et and dont write End date by default is current date ,
 #### if you want to set /et for after days you must enter /ed for example its wrong : /st 17:00 /et 08:00
 ----------------------------------------------------------------------------
  #### /mo   
