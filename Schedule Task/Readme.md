@@ -66,15 +66,15 @@ schtasks /run /tn <taskname> [/s <computer> [/u [<domain>\]<user> [/p <password>
 ### /tr 
 ###### (Taskrun)    you must use "" , But if use path for executable program or scritp you cant dont use it 
  ---------------------------------------------------------------------------
- #/st <Starttime>
-	#if you write /sd and dont write start time by default is current time ,
- #/sd <StartDate>
-	#if you write /st and dont write start date by default is current date ,
- #/et <EndTime>
-	#if you write /ed and dont write edn time for expire date by default is 12:00 AM ,
- #/ed <EndDate>
- 	#if you write /et and dont write End date by default is current date ,
-#****if you want to set /et for after days you must enter /ed for example its wrong : /st 17:00 /et 08:00
+ # /st <Starttime>
+###### if you write /sd and dont write start time by default is current time ,
+ # /sd <StartDate>
+###### if you write /st and dont write start date by default is current date ,
+ # /et <EndTime>
+###### if you write /ed and dont write edn time for expire date by default is 12:00 AM ,
+ # /ed <EndDate>
+###### if you write /et and dont write End date by default is current date ,
+#### if you want to set /et for after days you must enter /ed for example its wrong : /st 17:00 /et 08:00
 ----------------------------------------------------------------------------
  # /mo   
 	- if /sc was Daily   /mo is  1-365  
@@ -82,7 +82,7 @@ schtasks /run /tn <taskname> [/s <computer> [/u [<domain>\]<user> [/p <password>
 	- if /sc was monthly /mo is  1-12
 	- if /sc was hourly  /mo is  1-23  in visual /sc hourly = ontime with hourly repeat you can set duration until 1day
  # /du 
-##### (duration)  maximum length minute or hourly schedule in <HHHH:MM> 24-hour format.
+###### (duration)  maximum length minute or hourly schedule in <HHHH:MM> 24-hour format.
 -----------------------------------------------------------------------------
  ###### /Z  A value that  marks the task to be deleted after its final run.
  ###### /F  A value that  forcefully creates the task and suppresses warnings if the specified task already exists.
