@@ -1,32 +1,13 @@
 #https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks-create#to-schedule-a-task-to-run-every-n-hours
 
 #To schedule the MyApp program to run every five hours, beginning on the first day of March 2002, type:
-schtasks /create /sc hourly /mo 5 /sd 03/01/2002 /tn My App /tr c:\apps\myapp.exe
+schtasks /create /sc hourly /mo 5 /sd 03/01/2002 /tn MyTask /tr c:\apps\myapp.exe
 
 #To schedule the MyApp program to run hourly, beginning at five minutes past midnight, type:
-schtasks /create /sc hourly /st 00:05 /tn MyApp /tr c:\apps\myapp.exe
+schtasks /create /sc hourly /st 00:05 /tn MyTask /tr c:\apps\myapp.exe
 
 #To schedule the MyApp program to run every 3 hours, for 10 hours total, type:
-schtasks /create /sc hourly /mo 3 /st 00:00 /du 0010:00 /tn MyApp /tr myapp.exe 
+schtasks /create /sc hourly /mo 3 /st 00:00 /du 0010:00 /tn MyTask /tr myapp.exe 
 
 
 
-# /sc is Specifies the schedule type.
-      #MINUTE
-      #HOURLY
-      #DAILY
-      #WEEKLY
-      #MONTHLY
-      #ONCE
-      #ONSTART
-      #ONLOGON      to gether with  /ru {[<domain>]<user> | system}
-      #ONIDLE
-      
-#/mo <modifiers>
-      
-#/sd <Startdate>
-      #MM/DD/YYYY
-      
- #/tn <taskname>   ""
- 
- #/tr <Taskrun>    ""
