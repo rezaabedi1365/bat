@@ -1,0 +1,5 @@
+
+#Search *.txt in drive D:\
+d:\>dir | findstr .txt
+
+
