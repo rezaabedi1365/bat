@@ -1,0 +1,8 @@
+
+
+@echo off
+
+for /f "tokens=*" %%a in (d:\file1.txt) do (
+  echo line=%%a >> d:\resault.txt
+ 
+)
