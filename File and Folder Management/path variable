@@ -1,0 +1,11 @@
+#verify
+Z:\>set systemroot
+SystemRoot=C:\WINDOWS
+
+------------------------------------
+
+%userprofile%     
+
+%systemroot%   OR  %windir%
+
+%temp%
