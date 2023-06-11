@@ -1,0 +1,22 @@
+
+# Path Envirunment Variable
+  - %Systemroot%    OR   %windir%
+  - %userprofile%
+  - %temp%
+
+
+
+# FIND VS findstr
+###### FIND command can scan large files line-by-line to find a certain string. It doesn't support wildcards in the search string.
+```
+find /i "Completed" "%userprofile%\Downloads\*.log" >> %targetdir%\tested.log
+
+TYPE scan2.txt | FIND "Failed" /c && echo Scan failed || echo Scan Succeeded
+```
+
+###### FINDSTR command is more feature reach, and supports Regular Expressions (REGEX) search with wildcards in the search string.
+```
+FINDSTR /L /C:"Completed" Results.txt
+
+echo %%G | findstr /r /b /c:"[ ]*staff.*" >nul && echo Found!
+```
