@@ -1,4 +1,6 @@
 
+#FIND command can scan large files line-by-line to find a certain string. It doesn't support wildcards in the search string.
+
 @echo off
 
 FIND "Application" d:\file1.txt 
@@ -9,3 +11,8 @@ if %ERRORLEVEL%. equ 0. (
 )
 else (
 	echo up to date word in %DATE% %TIME% Was Fail. >> D:\resault.txt
+
+
+
+
+
