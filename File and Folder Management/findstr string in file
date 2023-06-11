@@ -1,0 +1,19 @@
+
+
+@echo off
+FINDSTR /C:"up to date" D:\file1.txt
+
+
+if %ERRORLEVEL%. equ 0. (
+
+	echo up to date word in %DATE% %TIME% Was Successful. >> D:\resault.txt
+
+	exit /B 
+
+)
+
+else (
+
+	echo up to date word in %DATE% %TIME% Was Fail. >> D:\resault.txt
+
+)
