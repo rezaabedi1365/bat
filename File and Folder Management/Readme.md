@@ -37,4 +37,6 @@ echo %%G | findstr /r /b /c:"[ ]*staff.*" >nul && echo Found!
      ```
      sc query  Winmgmt | find "RUNNING" >nul 2>&1 && (echo service is started) || (echo service is stopped)
      ```
+![image](https://github.com/rezaabedi1365/bat/assets/117336743/7a1976a4-f31a-4b7f-86f7-c4f683c14bdb)
+----------
 ![image](https://github.com/rezaabedi1365/bat/assets/117336743/d2e46e52-9be8-43c2-a8d7-dee3ddfa24c9)
