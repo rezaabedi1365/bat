@@ -20,3 +20,20 @@ FINDSTR /L /C:"Completed" Results.txt
 
 echo %%G | findstr /r /b /c:"[ ]*staff.*" >nul && echo Found!
 ```
+ # FIND
+ ```
+ find [/v] [/c] [/n] [/i] [/off[line]] <"string"> [[<drive>:][<path>]<filename>[...]]
+ ```
+ * [FIND Directory]()
+    ```
+    dir c:\temp /s /b | find "CPU"
+    ```
+
+ * [FIND Process]()
+   ```
+   tasklist | find /v /i "agent"
+   ```
+ * [FIND Service]()
+     ```
+     sc query  Winmgmt | find "RUNNING" >nul 2>&1 && (echo service is started) || (echo service is stopped)
+     ```
