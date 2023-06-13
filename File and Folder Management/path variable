@@ -6,6 +6,6 @@ SystemRoot=C:\WINDOWS
 
 %userprofile%     
 
-%systemroot%   OR  %windir%
+%systemroot%   OR  %windir%   OR    %SYSTEMDRIVE%
 
 %temp%
