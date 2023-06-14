@@ -12,3 +12,4 @@ msiexec /i "UEMSAgent.msi" /qn TRANSFORMS="UEMSAgent.mst" ENABLESILENT=yes REBOO
 
 
 #log in diffrent path
+msiexec.exe /i "\\Server\Share\Setup.msi" /QN /L*V "C:\Temp\msilog.log"
