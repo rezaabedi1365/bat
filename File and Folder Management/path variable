@@ -9,3 +9,5 @@ SystemRoot=C:\WINDOWS
 %systemroot%   OR  %windir%   OR    %SYSTEMDRIVE%
 
 %temp%
+
+%PROGRAMDATA%
