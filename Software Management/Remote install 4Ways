@@ -1,0 +1,19 @@
+
+
+#psexec
+	psexec \\b_bagheri2-pc.faradis.net \\file\Softbank\Manage Engine Patch Manager\localsetup\setup.bat
+
+	C:\apps\tools\psexec \\%RemoteHostName% -u %Domain%\%userName% -p %userPassword% -accepteula -d -h -i 1 cmd.exe /c 	"cd C:\apps\test\ & echo Hello World" & call C:\apps\test\script.bat
+
+#SCHTASKS:
+	SCHTASKS /s remote_machine /U username /P password /create /tn "On demand demo" /tr "C:\some.bat" /sc ONCE /sd 	01/01/1910 	/st 00:00 SCHTASKS /s remote_machine /U username /P password /run /TN "On demand demo"
+
+
+#WMIC 	(wmic will return the pid of the started process)
+
+	WMIC /NODE:"remote_machine" /user:user /password:password process call create "c:\some.bat","c:\exec_dir"
+
+	wmic /node:inidsoasrv01 process call create 
+   	 "cmd.exe D:\\apache-tomcat-6.0.20\\apache-tomcat-7.0.30\\bin\\shutdown.bat"
+
+shutdown.exe /s /m \\b_bagheri2-pc.faradis.net /t 00
