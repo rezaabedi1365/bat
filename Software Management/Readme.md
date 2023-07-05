@@ -84,8 +84,8 @@ Setup.exe /VERYSILENT /NORESTART
 
 
 - No Support for Silent Installation
-* USE Advanced Installer EXE setup
-* [Advanced Installer Architect](https://p30download.ir/fa/entry/12256/advanced-installer)
+###### USE Advanced Installer EXE setup
+- [Advanced Installer Architect](https://p30download.ir/fa/entry/12256/advanced-installer)
 
 ![image](https://github.com/rezaabedi1365/bat/assets/117336743/1cd4e1a4-4cea-4a7c-be85-78b1df650b6f)
 
