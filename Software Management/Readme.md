@@ -13,23 +13,25 @@
 
 -Application
 -  wmic product get name
-- Service
+  
+-Service
 - wmic service list brief
 - wmic startup list brief
-- Computer information
+  
+-Computer information
 - wmic OS
 - wmic computersystem get name,systemtype
-- wmic path win32_physicalmedia get SerialNumber 
-- 
+- wmic path win32_physicalmedia get SerialNumber
+  
+-Resources
 - WMIC COMPUTERSYSTEM GET MANUFACTURER
 - wmic baseboard get product,Manufacturer,version,serialnumber
-- 
 - wmic COMPUTERSYSTEM get TotalPhysicalMemory
 - wmic CPU
 - wmic process get workingsetsize,commandline
 - wmic process list brief
 - wmic partition get name,size,type
-- 
+-Network
 - wmic NETUSE
 - wmic NIC
 - wmic SHARE
