@@ -20,14 +20,19 @@ wmic product where name="ManageEngine UEMS - Agent" call uninstall /nointeractiv
 ### Examle
 
 -Application
--  wmic product get name
+- wmic product get name
+- WMIC PRODUCT GET name,vendor,version
+- WMIC PRODUCT GET InstallDate, Name,localPackage 
   
 -Service
 - wmic service list brief
 - wmic startup list brief
+- WMIC SERVICE where (state="running") GET caption, name, state > services.tsv
   
 -Computer information
 - wmic OS
+- WMIC OS LIST BRIEF
+- WMIC OS GET localdatetime
 - wmic computersystem get name,systemtype
 - wmic path win32_physicalmedia get SerialNumber
   
@@ -36,74 +41,36 @@ wmic product where name="ManageEngine UEMS - Agent" call uninstall /nointeractiv
 - wmic baseboard get product,Manufacturer,version,serialnumber
 - wmic COMPUTERSYSTEM get TotalPhysicalMemory
 - wmic CPU
+- WMIC PROCESS where name='evil.exe' delete
 - wmic process get workingsetsize,commandline
 - wmic process list brief
 - wmic partition get name,size,type
+- WMIC LOGICALDISK where drivetype!=4 get deviceid, description, volumename
 
 -Network
 - wmic NETUSE
 - wmic NIC
 - wmic SHARE
+- WMIC /node:computer64,computer65 PROCESS call create "netstat.exe -ano > C:\output.txt"
+- WMIC /node:@computers.txt /failfast:on PROCESS call create "\\server\share\installer.cmd"
+  ###### :: Get a list of installed Windows updates on a remote machine, unlike Get-Hotfix, this includes the installation date.
+- WMIC /NODE:"server64" QFE list
 
-:: List the OS build and version
-WMIC OS LIST BRIEF
+-Printer
+- WMIC PRINTER LIST brief
+- WMIC PRINTER where PortName="LPT1:" GET PortName, Name, ShareName
+- WMIC /INTERACTIVE:ON PRINTER where PortName="LPT1:" DELETE
 
-:: List the computername, locale and Bootdevice:
-WMIC OS GET csname, locale, bootdevice /value
 
-WMIC OS GET osarchitecture /value
-
-:: Get a list of installed Windows updates on a remote machine, unlike Get-Hotfix, this includes the installation date.
-WMIC /NODE:"server64" QFE list 
-
-:: Get the local date and time
-WMIC OS GET localdatetime
-
-:: List all local Disks
-WMIC LOGICALDISK where drivetype!=4 get deviceid, description, volumename
-
-:: List ipv4 adapters 
-WMIC NICCONFIG where (IPEnabled=True and TcpipNetbiosOptions!=null and TcpipNetbiosOptions!=2) GET caption,index,TcpipNetbiosOptions,IPEnabled
-
-:: Disable Netbios
-WMIC NICCONFIG where (IPEnabled=True and TcpipNetbiosOptions!=null and TcpipNetbiosOptions!=2) CALL SetTcpipNetbios 2
-
-:: Dump the full application event log to a text file:
-WMIC NTEVENT List Full >appevents.txt
-
-:: List all the running services and save to a file
-WMIC SERVICE where (state="running") GET caption, name, state > services.tsv
-
-:: Stop the TELNET service (also StartService, PauseService,ResumeService)
-WMIC SERVICE where caption='TELNET' CALL StopService
-
-:: List the installed software MSI's
-WMIC PRODUCT GET name,vendor,version
-WMIC PRODUCT GET InstallDate, Name,localPackage 
-
-:: Display Printer Status
-WMIC PRINTER LIST brief
-WMIC PRINTER LIST /?
-WMIC PRINTER where PortName="LPT1:" GET PortName, Name, ShareName
  
-WMIC /INTERACTIVE:ON PRINTER where PortName="LPT1:" DELETE
 
-WMIC PROCESS where name='evil.exe' delete
 
-WMIC /output:"%computername%.txt" MEMORYCHIP where "memorytype=17" get Capacity
+### :: Disable Netbios
+- WMIC NICCONFIG where (IPEnabled=True and TcpipNetbiosOptions!=null and TcpipNetbiosOptions!=2) CALL SetTcpipNetbios 2
 
-WMIC /node:computer64,computer65 PROCESS call create "netstat.exe -ano > C:\output.txt"
+### :: Stop the TELNET service (also StartService, PauseService,ResumeService)
+- WMIC SERVICE where caption='TELNET' CALL StopService
 
-WMIC /node:@computers.txt /failfast:on PROCESS call create "\\server\share\installer.cmd"
-
-WMIC /node:computer64 /output:shares.html SHARE get name,path /format:htable
-
-WMIC /node:computer64 SHARE where name="Share1" 
-
-Interactive mode:
-C:> WMIC
-wmic:root\cli> OS get csname
-wmic:root\cli> quit
 -------------------------------------------------
 
 # Setup.exe
