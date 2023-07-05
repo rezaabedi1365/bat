@@ -9,3 +9,4 @@
   - [install with current path log]()
   - [install with Special path log]()
   
+# wmic
