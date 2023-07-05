@@ -31,6 +31,7 @@
 - wmic process get workingsetsize,commandline
 - wmic process list brief
 - wmic partition get name,size,type
+
 -Network
 - wmic NETUSE
 - wmic NIC
