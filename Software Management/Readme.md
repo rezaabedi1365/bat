@@ -1,12 +1,7 @@
 # Curl
 ----------------------------
 # msiexc
-```
-wmic product get name
-```
-```
-wmic product where name="ManageEngine UEMS - Agent" call uninstall /nointeractive
-```
+
   - [Install From Current path]()
   - [Install From Special path]()
   - [install From UNC path]()
@@ -16,7 +11,13 @@ wmic product where name="ManageEngine UEMS - Agent" call uninstall /nointeractiv
   
 # wmic
 - [https://ss64.com/nt/wmic.html](https://ss64.com/nt/wmic.html)
-
+```
+wmic product get name
+```
+```
+wmic product where name="ManageEngine UEMS - Agent" call uninstall /nointeractive
+```
+###### Examle
 
 -Application
 -  wmic product get name
