@@ -10,3 +10,5 @@
   - [install with Special path log]()
   
 # wmic
+
+-wmic product get name 
