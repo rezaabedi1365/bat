@@ -11,4 +11,4 @@
   
 # wmic
 
--wmic product get name 
+- wmic product get name 
