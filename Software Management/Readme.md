@@ -10,6 +10,7 @@
   - [install with Special path log]()
   
 # wmic
+- [Syntax Link](https://ss64.com/nt/wmic.html)
 
 -Application
 -  wmic product get name
