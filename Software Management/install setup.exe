@@ -1,0 +1,14 @@
+
+#https://www.advancedinstaller.com/silent-install-exe-msi-applications.html
+
+Setup.exe /VERYSILENT /NORESTART
+
+Launches the EXE setup in silent mode
+/S
+
+Sets the default installation directory. It must not contain any quotes. Only absolute paths.
+Setup.exe /S /D=c:\My custom installdir
+
+
+
+
