@@ -102,8 +102,10 @@ wmic:root\cli> quit
 # Setup.exe
 
 - Support Silent Installation
-
+```
 Setup.exe /VERYSILENT /NORESTART
+```
+
 
 - No Support for Silent Installation
 
