@@ -17,7 +17,7 @@ wmic product get name
 ```
 wmic product where name="ManageEngine UEMS - Agent" call uninstall /nointeractive
 ```
-###### Examle
+### Examle
 
 -Application
 -  wmic product get name
