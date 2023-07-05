@@ -97,3 +97,13 @@ Interactive mode:
 C:> WMIC
 wmic:root\cli> OS get csname
 wmic:root\cli> quit
+-------------------------------------------------
+
+# Setup.exe
+
+- Support Silent Installation
+
+Setup.exe /VERYSILENT /NORESTART
+
+- No Support for Silent Installation
+
