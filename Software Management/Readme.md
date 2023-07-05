@@ -36,4 +36,4 @@
 - wmic NETUSE
 - wmic NIC
 - wmic SHARE
--    
+   
