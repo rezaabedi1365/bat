@@ -74,6 +74,7 @@ wmic product where name="ManageEngine UEMS - Agent" call uninstall /nointeractiv
 -------------------------------------------------
 
 # Setup.exe
+- [https://www.advancedinstaller.com/silent-install-exe-msi-applications.html](https://www.advancedinstaller.com/silent-install-exe-msi-applications.html)
 
 - Support Silent Installation
   
