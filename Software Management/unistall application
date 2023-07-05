@@ -4,3 +4,10 @@ wmic product where name="ManageEngine UEMS - Agent" call uninstall /nointeractiv
 
 #ReturnValue = 1603;  dont have administrator permision
 #ReturnValue = 0;  remove successfuly
+
+
+
+reg delete "HKEY_CLASSES_ROOT\Installer\Products\4749502044BC37C4AA96A71CAA2D661D" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Installer\Products\4749502044BC37C4AA96A71CAA2D661D" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\4749502044BC37C4AA96A71CAA2D661D" /f
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{41F12F70-5FA9-43F5-94F4-53B54EB4EEC4}" /f
