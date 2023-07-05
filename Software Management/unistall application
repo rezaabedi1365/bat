@@ -1,0 +1,6 @@
+
+#wmic product get name  
+wmic product where name="ManageEngine UEMS - Agent" call uninstall /nointeractive
+
+#ReturnValue = 1603;  dont have administrator permision
+#ReturnValue = 0;  remove successfuly
