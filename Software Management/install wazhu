@@ -6,3 +6,4 @@ net start WazuhSvc
 del /f "%temp%\xw44.msi"
 #del /f "d:xw44.msi"
 
+
