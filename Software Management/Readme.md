@@ -90,8 +90,13 @@ Setup.exe /VERYSILENT /NORESTART
 ![image](https://github.com/rezaabedi1365/bat/assets/117336743/1cd4e1a4-4cea-4a7c-be85-78b1df650b6f)
 
 ![image](https://github.com/rezaabedi1365/bat/assets/117336743/001cbed7-353b-4716-ba9c-835e4f7fa4ae)
+--------------------------------------------------
 
-
-
+# psexec
+- [https://learn.microsoft.com/en-us/sysinternals/downloads/psexec](https://learn.microsoft.com/en-us/sysinternals/downloads/psexec)
+  
+```
+C:\apps\tools\psexec \\%RemoteHostName% -u %Domain%\%userName% -p %userPassword% -accepteula -d -h -i 1 cmd.exe /c 	"cd C:\apps\test\ & echo Hello World" & call C:\apps\test\script.bat
+```
 
      
