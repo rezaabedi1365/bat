@@ -19,8 +19,13 @@ curl -o %temp%\spf.msi http://192.168.1.10:3333/spf.msi
     ```
   ---------------------
   - [install with current path log]()
+    ```
+    msiexec.exe /i "\\Server\Share\Setup.msi" /QN /L*V "msilog.log"
+    ```
   - [install with Special path log]()
-  
+    ```
+    msiexec.exe /i "\\Server\Share\Setup.msi" /QN /L*V "C:\Temp\msilog.log"
+    ```
 # wmic
 - [https://ss64.com/nt/wmic.html](https://ss64.com/nt/wmic.html)
 ```
