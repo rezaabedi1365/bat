@@ -81,7 +81,13 @@ wmic product where name="ManageEngine UEMS - Agent" call uninstall /nointeractiv
 ```
 Setup.exe /VERYSILENT /NORESTART
 ```
-
+```
+cd /d d:\ && .\LocalOffice_Agent.exe /VERYSILENT /NORESTART
+```
+```
+cd /d "%temp%" && .\LocalOffice_Agent.exe /VERYSILENT /NORESTAR
+del /f "%temp%\LocalOffice_Agent.exe"
+```
 
 - No Support for Silent Installation
 ###### USE Advanced Installer EXE setup
