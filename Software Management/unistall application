@@ -1,4 +1,9 @@
 
+#"%ProgramFiles%\WinRAR\uninstall.exe" /S
+cd %ProgramFiles%\WinRAR & uninstall.exe /S
+
+
+-----------------------------------------------------------------------------
 #wmic product get name  
 wmic product where name="ManageEngine UEMS - Agent" call uninstall /nointeractive
 
