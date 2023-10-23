@@ -1,0 +1,34 @@
+@echo off
+SET hosts=%windir%\system32\drivers\etc\hosts
+attrib -r %hosts%
+echo. >>%hosts%
+FOR %%A IN (
+
+lmlicenses.wip4.adobe.com
+lm.licenses.adobe.com
+na1r.services.adobe.com
+hlrcv.stage.adobe.com
+practivate.adobe.com
+activate.adobe.com
+lm-prd-da1.licenses.adobe.com
+activate.wip4.adobe.com
+practivate-da1.adobe.com
+uds.licenses.adobe.com
+licenses.adobe.com
+license.adobe.com
+helpexamples.com
+activate-sea.adobe.com
+activate-sjc0.adobe.com
+ereg.adobe.com
+activate.adobe.com
+na1r.services.adobe.com
+activate.wip3.adobe.com
+wip3.adobe.com
+ereg.wip3.adobe.com
+wwis-dubc1-vip60.adobe.com
+
+) DO (
+ echo 127.0.0.1 %%A >>%hosts%
+)
+attrib +r %hosts%
+echo Successfully added entries
