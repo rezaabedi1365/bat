@@ -1,0 +1,109 @@
+SET NEWLINE=^& echo.
+
+attrib -r %WINDIR%\system32\drivers\etc\hosts   
+
+ECHO %NEWLINE%%NEWLINE%^0.0.0.0 activation.paessler.com>>%WINDIR%\system32\drivers\etc\hosts
+
+attrib +r %WINDIR%\system32\drivers\etc\hosts   
+
+attrib -r %WINDIR%\system32\drivers\etc\hosts   
+
+ECHO %NEWLINE%%NEWLINE%^0.0.0.0 activation.paessler.ag>>%WINDIR%\system32\drivers\etc\hosts
+
+attrib +r %WINDIR%\system32\drivers\etc\hosts   
+
+attrib -r %WINDIR%\system32\drivers\etc\hosts   
+
+ECHO %NEWLINE%%NEWLINE%^0.0.0.0 activation.paessler.eu>>%WINDIR%\system32\drivers\etc\hosts
+
+attrib +r %WINDIR%\system32\drivers\etc\hosts   
+
+attrib -r %WINDIR%\system32\drivers\etc\hosts   
+
+ECHO %NEWLINE%%NEWLINE%^0.0.0.0 activation1.paessler.com>>%WINDIR%\system32\drivers\etc\hosts
+
+attrib +r %WINDIR%\system32\drivers\etc\hosts   
+
+attrib -r %WINDIR%\system32\drivers\etc\hosts   
+
+ECHO %NEWLINE%%NEWLINE%^0.0.0.0 activation1.paessler.ag>>%WINDIR%\system32\drivers\etc\hosts
+
+attrib +r %WINDIR%\system32\drivers\etc\hosts   
+
+attrib -r %WINDIR%\system32\drivers\etc\hosts   
+
+ECHO %NEWLINE%%NEWLINE%^0.0.0.0 activation1.paessler.eu>>%WINDIR%\system32\drivers\etc\hosts
+
+attrib +r %WINDIR%\system32\drivers\etc\hosts   
+
+attrib -r %WINDIR%\system32\drivers\etc\hosts   
+
+ECHO %NEWLINE%%NEWLINE%^0.0.0.0 autoupdate.paessler.com>>%WINDIR%\system32\drivers\etc\hosts
+
+attrib +r %WINDIR%\system32\drivers\etc\hosts   
+
+attrib -r %WINDIR%\system32\drivers\etc\hosts   
+
+ECHO %NEWLINE%%NEWLINE%^0.0.0.0 autoupdate.paessler.ag>>%WINDIR%\system32\drivers\etc\hosts
+
+attrib +r %WINDIR%\system32\drivers\etc\hosts   
+
+attrib -r %WINDIR%\system32\drivers\etc\hosts   
+
+ECHO %NEWLINE%%NEWLINE%^0.0.0.0 autoupdate.paessler.eu>>%WINDIR%\system32\drivers\etc\hosts
+
+attrib +r %WINDIR%\system32\drivers\etc\hosts   
+
+attrib -r %WINDIR%\system32\drivers\etc\hosts   
+
+ECHO %NEWLINE%%NEWLINE%^0.0.0.0 updatecheck.paessler.com>>%WINDIR%\system32\drivers\etc\hosts
+
+attrib +r %WINDIR%\system32\drivers\etc\hosts   
+
+attrib -r %WINDIR%\system32\drivers\etc\hosts   
+
+ECHO %NEWLINE%%NEWLINE%^0.0.0.0 updatecheck.paessler.ag>>%WINDIR%\system32\drivers\etc\hosts
+
+attrib +r %WINDIR%\system32\drivers\etc\hosts   
+
+attrib -r %WINDIR%\system32\drivers\etc\hosts   
+
+ECHO %NEWLINE%%NEWLINE%^0.0.0.0 updatecheck.paessler.eu>>%WINDIR%\system32\drivers\etc\hosts
+
+attrib +r %WINDIR%\system32\drivers\etc\hosts   
+
+attrib -r %WINDIR%\system32\drivers\etc\hosts   
+
+ECHO %NEWLINE%%NEWLINE%^0.0.0.0 api.prtgcloud.com>>%WINDIR%\system32\drivers\etc\hosts
+
+attrib +r %WINDIR%\system32\drivers\etc\hosts   
+
+attrib -r %WINDIR%\system32\drivers\etc\hosts   
+
+ECHO %NEWLINE%%NEWLINE%^0.0.0.0 api.prtgcloud.ag>>%WINDIR%\system32\drivers\etc\hosts
+
+attrib +r %WINDIR%\system32\drivers\etc\hosts   
+
+attrib -r %WINDIR%\system32\drivers\etc\hosts   
+
+ECHO %NEWLINE%%NEWLINE%^0.0.0.0 api.prtgcloud.eu>>%WINDIR%\system32\drivers\etc\hosts
+
+attrib +r %WINDIR%\system32\drivers\etc\hosts   
+
+attrib -r %WINDIR%\system32\drivers\etc\hosts   
+
+ECHO %NEWLINE%%NEWLINE%^0.0.0.0 prtgicons.paessler.com>>%WINDIR%\system32\drivers\etc\hosts
+
+attrib +r %WINDIR%\system32\drivers\etc\hosts   
+
+attrib -r %WINDIR%\system32\drivers\etc\hosts   
+
+ECHO %NEWLINE%%NEWLINE%^0.0.0.0 prtgicons.paessler.ag>>%WINDIR%\system32\drivers\etc\hosts
+
+attrib +r %WINDIR%\system32\drivers\etc\hosts   
+
+attrib -r %WINDIR%\system32\drivers\etc\hosts   
+
+ECHO %NEWLINE%%NEWLINE%^0.0.0.0 prtgicons.paessler.eu>>%WINDIR%\system32\drivers\etc\hosts
+
+attrib +r %WINDIR%\system32\drivers\etc\hosts   
