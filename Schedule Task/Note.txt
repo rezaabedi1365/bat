@@ -1,7 +1,6 @@
 https://learn.microsoft.com/en-us/windows/win32/taskschd/schtasks
 https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks-create
 
-
 #/sc is Specifies the schedule type.
       #MINUTE  in visual is ontime with minut repeat
       #HOURLY  in visual is ontime with hourly repeat
