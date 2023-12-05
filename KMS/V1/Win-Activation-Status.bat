@@ -1,5 +1,5 @@
 @echo off
-title Windows Activation Status - Faradis Alborz
+title Windows Activation Status - faratest.net
 call :isAdmin
 if %errorlevel% == 0 (
 goto :run
