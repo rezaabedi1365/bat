@@ -1,2 +1,2 @@
 @echo
-cd %ProgramFiles%\WinRAR & uninstall.exe /S
+cd %ProgramFiles%\WinRAR & uninstall.exe /S 
