@@ -13,7 +13,7 @@ fsutil dirty query %systemdrive% >nul
 exit /b
 :run
 cd C:\Program Files\Microsoft Office\Office14
-cscript ospp.vbs /sethst:activator.faradis.net
+cscript ospp.vbs /sethst:activator.faratest.net
 cscript ospp.vbs /act
 exit /b
 :UACPrompt
