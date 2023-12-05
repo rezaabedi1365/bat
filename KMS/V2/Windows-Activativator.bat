@@ -1,4 +1,4 @@
-slmgr /skms 172.16.81.163
+slmgr /skms activator.faratest.net
 slmgr /ato
 exit /b
 
