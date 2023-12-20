@@ -1,4 +1,4 @@
-
+# HKEY_CLASSES_ROOT=HKCR , HKEY_CURRENT_USER= , HKEY_LOCAL_MACHINE=  , HKEY_USERS= , HKEY_CURRENT_CONFIG= 
 
 #reg delete  Registry_key_path /v Registry_value_name /f
 #reg delete  Registry_key_path /f
