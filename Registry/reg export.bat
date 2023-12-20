@@ -2,7 +2,7 @@
 
 #reg export [registry path] [path to store backup] /y
 
-#reg export HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\SppExtComObj.exe c:\KMS_Registry_backup.reg /y
+#reg export "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\SppExtComObj.exe" c:\KMS_Registry_backup.reg /y
  
 reg export HKCR C:RegBackHKCR.Reg /y
 
