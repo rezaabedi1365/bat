@@ -26,7 +26,7 @@ curl -o %temp%\spf.msi http://192.168.1.10:3333/spf.msi
     ```
     msiexec.exe /i "\\Server\Share\Setup.msi" /QN /L*V "C:\Temp\msilog.log"
     ```
-      ### msiexex unistall
+  ### msiexex unistall
     ```
      MSIEXEC /X D:\ees_nt64_full.msi /qb REBOOT="ReallySuppress" PASSWORD="123456"
     ```
