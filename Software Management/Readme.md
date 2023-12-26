@@ -4,6 +4,7 @@ curl -o %temp%\spf.msi http://192.168.1.10:3333/spf.msi
   ```
 ----------------------------
 # msiexc
+![image](https://github.com/rezaabedi1365/bat/assets/117336743/e9c5fc1b-06ba-4983-8328-54f0a808d014)
 
   - [Install From Current path]()
     ```
