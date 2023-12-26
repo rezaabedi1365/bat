@@ -6,8 +6,9 @@ curl -o %temp%\spf.msi http://192.168.1.10:3333/spf.msi
 # msiexc
 ### syntax
 ```
-msiexec.exe [/i][/a][/j{u|m|/g|/t}][/x] <path_to_package>  [/qn][/qb]  <package parameters>
+msiexec.exe [/i][/a][/j{u|m|/g|/t}][/x] <path_to_package>  [/quiet][/passive][/q{n|b|r|f}]  <package parameters> 
 ```
+![image](https://github.com/rezaabedi1365/bat/assets/117336743/5d01c891-ff1d-4543-9a24-4e6ad5c86458)
 
   - [Install From Current path]()
     ```
