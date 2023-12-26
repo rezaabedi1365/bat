@@ -17,7 +17,7 @@ curl -o %temp%\spf.msi http://192.168.1.10:3333/spf.msi
     ```
     msiexec /i "\\file\Softbank\Manage Engine Patch Manager\localsetup\UEMSAgent.msi" /qn TRANSFORMS="UEMSAgent.mst" ENABLESILENT=yes REBOOT=ReallySuppress INSTALLSOURCE=Manual SERVER_ROOT_CRT="%cd%\DMRootCA-Server.crt" DS_ROOT_CRT="%cd%\DMRootCA.crt" /lv "Agentinstalllog.txt
     ```
-  ---------------------
+  ### msiexex whith log
   - [install with current path log]()
     ```
     msiexec.exe /i "\\Server\Share\Setup.msi" /QN /L*V "msilog.log"
@@ -25,6 +25,10 @@ curl -o %temp%\spf.msi http://192.168.1.10:3333/spf.msi
   - [install with Special path log]()
     ```
     msiexec.exe /i "\\Server\Share\Setup.msi" /QN /L*V "C:\Temp\msilog.log"
+    ```
+      ### msiexex unistall
+    ```
+     MSIEXEC /X D:\ees_nt64_full.msi /qb REBOOT="ReallySuppress" PASSWORD="123456"
     ```
 # wmic
 - [https://ss64.com/nt/wmic.html](https://ss64.com/nt/wmic.html)
