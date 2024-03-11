@@ -1,4 +1,4 @@
-
+![image](https://github.com/rezaabedi1365/bat/assets/117336743/f966cfe4-5711-44d8-b7aa-2bc5113e5da0)
 ![image](https://github.com/rezaabedi1365/bat/assets/117336743/a4cce3b2-9ed2-48c7-a1c8-2026cd3886fc)
 ##### https://ss64.com/nt/syntax-delolder.html
 
@@ -30,6 +30,12 @@ PS C:\> $now = get-date
 PS C:\> dir "C:\source_folder\" | where {$_.LastWriteTime -le $now.AddDays(-7)} | del -whatif
 ```
 ![image](https://github.com/rezaabedi1365/bat/assets/117336743/b97e83b3-1db5-423f-b7bc-41c8d5959786)
+
+
+![image](https://github.com/rezaabedi1365/bat/assets/117336743/bc3d0960-370a-4292-8348-ce0ade9bf18f)
+
+
+![image](https://github.com/rezaabedi1365/bat/assets/117336743/01d6b117-c29c-4b0d-b9db-c37c0658493c)
 
 ---------------------------------------------------------------------------------------------------------------------
 https://pureinfotech.com/delete-files-older-than-days-windows-10/
