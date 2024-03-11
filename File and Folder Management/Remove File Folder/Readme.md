@@ -5,7 +5,7 @@ How-to: Delete files older than N days
 
 There are several ways to do this
 
-1) Using ForFiles to delete files over 7 days old:
+1) Using ForFiles to delete files over 7 days old [last modifie date]:
 ```
 forfiles /p "C:\source_folder" /s /m *.* /c "cmd /c Del @path" /d -7
 forfiles /P  C:\source_folder  /S /M *.* /D -7 /C "cmd /c del @PATH"
