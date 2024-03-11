@@ -7,7 +7,7 @@ There are several ways to do this
 1) Using ForFiles to delete files over 7 days old:
 
 C:\> forfiles /p "C:\source_folder" /s /m *.* /c "cmd /c Del @path" /d -7
-     forfiles /P  C:\source_folder  /S /M *.* /D -7 /C "cmd /c del @PATH"
+forfiles /P  C:\source_folder  /S /M *.* /D -7 /C "cmd /c del @PATH"
 
 2) Using Robocopy /Move to delete files over 7 days old:
 
