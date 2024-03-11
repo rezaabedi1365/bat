@@ -3,6 +3,8 @@
 ##### https://ss64.com/nt/syntax-delolder.html
 
 ![image](https://github.com/rezaabedi1365/bat/assets/117336743/7be23530-1fb7-44d5-af90-9889a0ee1b86)
+![image](https://github.com/rezaabedi1365/bat/assets/117336743/4bfa197f-e1c2-4998-8e79-0c913657f6ca)
+
 
 How-to: Delete files older than N days
 
