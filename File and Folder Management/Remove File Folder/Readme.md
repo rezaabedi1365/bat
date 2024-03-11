@@ -1,4 +1,5 @@
 https://ss64.com/nt/syntax-delolder.html
+![image](https://github.com/rezaabedi1365/bat/assets/117336743/a4cce3b2-9ed2-48c7-a1c8-2026cd3886fc)
 
 How-to: Delete files older than N days
 
