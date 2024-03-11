@@ -24,6 +24,8 @@ C:\> del %_robodel% /q
 PS C:\> $now = get-date
 PS C:\> dir "C:\source_folder\" | where {$_.LastWriteTime -le $now.AddDays(-7)} | del -whatif
 ```
+![image](https://github.com/rezaabedi1365/bat/assets/117336743/b97e83b3-1db5-423f-b7bc-41c8d5959786)
+
 ---------------------------------------------------------------------------------------------------------------------
 https://pureinfotech.com/delete-files-older-than-days-windows-10/
 
