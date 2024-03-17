@@ -1,3 +1,4 @@
+#https://stackoverflow.com/questions/30845145/batch-file-to-check-program-installation
 @echo off
 cls & color 0B
 Mode con cols=90 lines=5
