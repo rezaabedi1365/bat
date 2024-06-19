@@ -15,6 +15,9 @@ verify ntp server:
   w32tm /query /peers 
   w32tm /query /configuration
 
+w32tm /config /manualpeerlist:time2.google.com /syncfromflags:manual /reliable:yes /update 
+net stop w32time && net start w32time
+
 @echo off
 w32tm /config /syncfromflags:DOMHIER /reliable:YES /update
 w32tm /resync /nowait
