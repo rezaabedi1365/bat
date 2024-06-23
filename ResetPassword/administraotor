@@ -1,0 +1,19 @@
+PCUnlocker
+Hiren Boot
+
+https://www.youtube.com/watch?v=69b_1QM1D-g
+
+
+diskpart 
+list volume
+select volume
+assign letter=c
+exit
+
+cd c:\
+cd windows\system32
+ren osk.exe osk.old
+copy c:\windows\system32\windowsPowershell\v1.0\powershell.exe osk.exe
+reset os
+
+net user administrator password123!
