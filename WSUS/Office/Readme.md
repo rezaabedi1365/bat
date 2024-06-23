@@ -10,5 +10,5 @@ https://learn.microsoft.com/en-us/officeupdates/microsoft365-apps-security-updat
 
 # microsoft.com/update-guide
 
-https://msrc.microsoft.com/update-guide
-https://msrc.microsoft.com/update-guide/en-us/advisory/CVE-2024-30103#main-content
+ * https://msrc.microsoft.com/update-guide
+* https://msrc.microsoft.com/update-guide/en-us/advisory/CVE-2024-30103#main-content
