@@ -1,0 +1,14 @@
+# https://4sysops.com/archives/forgot-the-domain-admin-password/
+# https://woshub.com/reset-domain-administrator-password-active-directory/
+
+move d:\windows\system32\utilman.exe d:\windows\system32\utilman.exe.bak
+copy d:\windows\system32\cmd.exe d:\windows\system32\utilman.exe
+wpeutil reboot
+
+
+
+
+
+net user administrator *
+move /y d:\windows\system32\utilman.exe.bak d:\windows\system32\utilman.exe
+wpeutil reboot
