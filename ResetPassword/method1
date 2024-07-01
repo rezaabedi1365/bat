@@ -16,4 +16,17 @@ ren osk.exe osk.old
 copy c:\windows\system32\windowsPowershell\v1.0\powershell.exe osk.exe
 reset os
 
+shwo list of domain users
+>net user
+
+chenge password
+>net user administrator 123456aA2044
+
+active user
+>net user administrator /active:yes
+
+show groups 
+>net group
+>net group /domain "Domain Admins"
+
 net user administrator password123!
