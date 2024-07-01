@@ -8,6 +8,18 @@ wpeutil reboot
 
 
 
+shwo list of domain users
+>net user
+
+chenge password
+>net user administrator 123456aA2044
+
+active user
+>net user administrator /active:yes
+
+show groups 
+>net group
+>net group /domain "Domain Admins"
 
 net user administrator *
 move /y d:\windows\system32\utilman.exe.bak d:\windows\system32\utilman.exe
