@@ -1,3 +1,4 @@
+https://learn.microsoft.com/en-us/windows-server/networking/windows-time-service/windows-time-service-tools-and-settings?tabs=config
 
 Computer> Configuration> Policies> Administrative Templates> System > Windows Time Service > Time Providers
         > Configure Windows NTP Client
