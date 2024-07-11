@@ -1,0 +1,16 @@
+https://learn.microsoft.com/en-us/windows-server/networking/windows-time-service/windows-time-service-tools-and-settings?tabs=config
+#reconfig 
+      w32tm /config /update
+
+@echo off
+w32tm /config /syncfromflags:DOMHIER /reliable:YES /update
+w32tm /resync /nowait
+net stop w32time
+net start w32time 
+EOF
+
+verify ntp server:
+  w32tm /query /status
+  w32tm /query /peers 
+  w32tm /query /configuration
+     - Type: NT5DS (Local)
