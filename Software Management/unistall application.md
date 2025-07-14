@@ -1,9 +1,11 @@
-
+## Method 1:
+```
 #"%ProgramFiles%\WinRAR\uninstall.exe" /S
 cd %ProgramFiles%\WinRAR & uninstall.exe /S
-
+```
 
 -----------------------------------------------------------------------------
+## wmic
 #wmic product get name  
 wmic product where name="ManageEngine UEMS - Agent" call uninstall /nointeractive
 
@@ -23,10 +25,10 @@ reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Install
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{41F12F70-5FA9-43F5-94F4-53B54EB4EEC4}" /f
 ---------------------------------------------------------------------------
 
-#Uninstall Using the Installation MSI
+## Uninstall Using the Installation MSI
 msiexec /x <PROGRAM NAME HERE>.msi /q
 
 --------------------------------------
-#Uninstall a Program using PowerShell
+## Uninstall a Program using PowerShell
 $app = Get-WmiObject -Class Win32_Product -Filter "Name = '<PROGRAM NAME HERE>'"
 $app.Uninstall()
