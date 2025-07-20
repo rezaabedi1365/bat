@@ -1,58 +1,57 @@
-برای حذف نرم‌افزار در **PowerShell**، چند حالت داریم — بستگی داره برنامه معمولی باشه یا اپلیکیشن UWP (اپلیکیشن‌های Store).
+اگر می‌خواهی **ManageEngine Patch Manager Plus Agent** را با `msiexec` به صورت Silent حذف کنی، باید اول **Product Code** (کد محصول MSI) را پیدا کنی.
 
 ---
 
-### ۱️⃣ حذف برنامه‌های نصبی معمولی (Win32 Apps)
+### ✅ مرحله ۱: پیدا کردن Product Code
 
-ابتدا اطلاعات نرم‌افزار را از رجیستری بگیر:
+در PowerShell:
 
 ```powershell
-Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*" |
-Where-Object { $_.DisplayName -like "*اسم برنامه*" } |
-Select-Object DisplayName, UninstallString
+Get-WmiObject Win32_Product | Where-Object { $_.Name -like "*ManageEngine*" } | Select-Object Name, IdentifyingNumber
 ```
 
-بعد از اینکه مسیر `UninstallString` رو دیدی، اون رو اجرا کن:
+خروجی مثلاً:
 
-```powershell
-& "مسیر کامل UninstallString"
 ```
-
-مثال:
-
-```powershell
-& "C:\Program Files\ManageEngine\Patch Manager Plus Agent\uninst.exe" -uninstall
+Name                           IdentifyingNumber
+----                           -----------------
+ManageEngine Patch Manager Plus Agent  {12345678-ABCD-1234-ABCD-1234567890AB}
 ```
 
 ---
 
-### ۲️⃣ حذف برنامه‌های ۶۴ بیتی (از WOW6432Node):
+### ✅ مرحله ۲: حذف با `msiexec`
 
-```powershell
-Get-ItemProperty "HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*" |
-Where-Object { $_.DisplayName -like "*اسم برنامه*" } |
-Select-Object DisplayName, UninstallString
+```cmd
+msiexec /x {12345678-ABCD-1234-ABCD-1234567890AB} /qn /norestart
 ```
 
 ---
 
-### ۳️⃣ حذف اپلیکیشن‌های Store (UWP Apps)
+### ✅ سوییچ‌ها:
 
-اگر می‌خواهی App های Store را حذف کنی:
+| سوییچ        | توضیح                |
+| ------------ | -------------------- |
+| `/x`         | Uninstall            |
+| `/qn`        | Quiet (بی‌صدا)       |
+| `/norestart` | جلوگیری از ری‌استارت |
+
+---
+
+### ⚠️ هشدار مهم:
+
+* دستور `Get-WmiObject` گاهی اوقات کند است و همه برنامه‌ها را نشان نمی‌دهد.
+* اگر برنامه از MSI نصب نشده باشد، این روش جواب نمی‌دهد.
+
+---
+
+### ✅ مرحله ۳ (اگر MSI نبود): استفاده از Uninstaller Agent
 
 ```powershell
-Get-AppxPackage *اسم برنامه* | Remove-AppxPackage
+& "C:\Program Files (x86)\ManageEngine\Patch Manager Plus Agent\uninst.exe" -uninstall -silent
 ```
 
 ---
 
-### ۴️⃣ حذف با Winget (پیشنهاد ویژه)
-
-```powershell
-winget uninstall "اسم نرم افزار"
-```
-
----
-
-💡 **اگر اسم دقیق نرم‌افزار یا نمونه uninstall string رو بدی، می‌تونم دستوری دقیق برات بنویسم.**
-همچنین می‌تونم اسکریپت آماده برای silent uninstall (حذف بی‌صدا) بدم.
+اگر خواستی، می‌تونم یک اسکریپت ترکیبی برای شناسایی و حذف بهت بدم تا خودش بررسی کنه و حذف کنه.
+💬 بگو تا برات بسازم.
