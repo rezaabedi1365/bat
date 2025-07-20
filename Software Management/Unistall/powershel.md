@@ -55,3 +55,35 @@ msiexec /x {12345678-ABCD-1234-ABCD-1234567890AB} /qn /norestart
 
 اگر خواستی، می‌تونم یک اسکریپت ترکیبی برای شناسایی و حذف بهت بدم تا خودش بررسی کنه و حذف کنه.
 💬 بگو تا برات بسازم.
+
+```
+# تعریف نام نرم‌افزار (اینجا مثال با ManageEngine)
+$AppName = "*ManageEngine*"
+
+# جستجوی Product Code
+$Product = Get-WmiObject Win32_Product | Where-Object { $_.Name -like $AppName }
+
+# بررسی اینکه آیا پیدا شد یا نه
+if ($Product) {
+    $ProductCode = $Product.IdentifyingNumber
+    Write-Output "Product Code Found: $ProductCode"
+
+    # اجرای Uninstall Silent
+    Start-Process "msiexec.exe" -ArgumentList "/x $ProductCode /qn" -Wait
+    Write-Output "Uninstall command executed."
+} else {
+    Write-Output "Application not found."
+}
+
+```
+
+### run in eset consol task
+* Execution Policy & Visibility
+ - Use -ExecutionPolicy Bypass to avoid policy block
+ - Use -WindowStyle Hidden to hide the console
+ - Use -NoProfile for clean run
+
+```
+powershell.exe -ExecutionPolicy Bypass -NoProfile -Command "\\server\share\yourscript.ps1"
+
+```
