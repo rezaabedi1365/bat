@@ -35,5 +35,7 @@ msiexec /x <path to the MSI file> /l*v <path to the log file>
 msiexec /x <{ProductCode}> /qn
 ```
 # How to uninstall an MSI via PowerShell Start-Process cmdlet
+```
 Start-Process "C:\Windows\System32\msiexec.exe" -ArgumentList "/x <ProductCode> /qn /l*v <path to the log file" -Wait
+```
 
