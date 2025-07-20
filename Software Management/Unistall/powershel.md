@@ -78,7 +78,7 @@ if ($Product) {
 ```
 
 ### run in eset consol task
-* Execution Policy & Visibility
+ ###### Execution Policy & Visibility
  - Use -ExecutionPolicy Bypass to avoid policy block
  - Use -WindowStyle Hidden to hide the console
  - Use -NoProfile for clean run
