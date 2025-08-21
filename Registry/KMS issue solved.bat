@@ -1,4 +1,8 @@
 @echo off
+REM ***remove last activation***
+	REM slmgr /upk
+	REM slmgr /cpky
+	REM slmgr /rearm
 
 reg export  "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\SppExtComObj.exe" c:\KMS_Registry_backup.reg /y
 reg delete  "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\SppExtComObj.exe" /f
