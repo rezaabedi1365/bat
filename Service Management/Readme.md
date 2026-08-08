@@ -13,3 +13,7 @@ Disable the service
 ```
 sc stop "SERVICE-NAME" & sc config "SERVICE-NAME" start=disabled
 ```
+
+```
+sc query type= service | findstr /I jira
+```
